@@ -42,3 +42,6 @@ Below are the methods of building a model
     FIN: You model is ready    
 
 stepwise regression refers to 2 ,3 & 4 or sometimes only 4. backward elimination is fast.
+
+
+Backward regression is irrelevant in Python because Scikit-Learn library automatically takes cares of selecting the statistically significant features when training model to make accurate predictions. 
