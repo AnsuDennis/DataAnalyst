@@ -1,1 +1,7 @@
+Random Forest Intuition 
+
+Step 1: Pick at random k data points from the training set 
+Step 2: Build the decision tree assocaited to these k data point  
+Step 3: Choose the number Ntree of trees u want to build and repeat steps 1 & 2
+Step 4: For a new data point, make each one of your Ntree trees predict the value of Y to from the data point in question and assign the new data point the average accross all of the predicted Y values.
 
