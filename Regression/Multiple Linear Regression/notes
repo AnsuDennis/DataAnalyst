@@ -5,3 +5,40 @@ homoscedasticity
 multivariate normality
 independence of errors 
 lack of multicollinearity 
+
+# Building a model 
+
+We should only keep those variables which are impacting the model. Else gargabe in gargabe out and it will be diff to explain to ppl the model. 
+
+Below are the methods of building a model
+1. All-in : Use all the variables. u might use all them because a. of prior knowledge b. you have to c. preparing for backward elimination 
+2. Backward Elimination - 
+    a. Step 1: select significance level to stay in the model(eg SL = 0.05)
+    b. Step 2: Fit the full model with all possible predictors
+    c. Step 3: Consider the predictors with the highest P-value. If P > SL go to Step 4, otherwise go to FIN
+    d. Step 4: Remove the predictor
+    e. Step 5: Fit the  model without this variable. Repeat from Step 3 
+    FIN: You model is ready    
+        
+3. Forward Selection
+    a. Step 1: select significance level to enter the model(eg SL = 0.05)
+    b. Step 2: Fit all simple regression models y~ xn. Select the one with the lowest P-value
+    c. Step 3: Keep this variable and fit all possible models with one extra predictor added to the ones ypu already have 
+    d. Step 4: Consider the predictors with the lowest P-value. If P < SL go to Step 3, otherwise go to FIN
+    FIN: Keep the previous model     
+        
+4. Bidirectional Elimniation
+    a. Step 1: select significance level to enter and to stay in the model(eg SLENTER = 0.05,  SLSTAY = 0.05)
+    b. Step 2: Perform the next step of Forward Selection (new variables must have : P < SLENTER to enter)
+    c. Step 3: Perform ALL steps of Backward Selection (old variables must have : P < SLSTAY to stay). Repeat step 2.
+    d. Step 4: When no new variables can enter and no old variables can exit, then go to FIN
+    FIN: You model is ready    
+      
+
+5. Score comparison 
+    a. Step 1: Select a criterion of goodness of fit(eg Akaike criterion)
+    b. Step 2: Construct All Possible regression models: 2^n - 1 total combinations 
+    c. Step 3: Select the one with the best criterion
+    FIN: You model is ready    
+
+stepwise regression refers to 2 ,3 & 4 or sometimes only 4. backward elimination is fast.
