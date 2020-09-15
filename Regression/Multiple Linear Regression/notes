@@ -1,0 +1,7 @@
+Assumptions of linear regression. Before u built one make sure the assumptions are correct for the model built 
+
+linearity
+homoscedasticity
+multivariate normality
+independence of errors 
+lack of multicollinearity 
