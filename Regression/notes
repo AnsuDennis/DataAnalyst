@@ -1,1 +1,8 @@
+Regression models(both linear and non-linear) are used for predicting a real value (eg: salary). If your independent variable is time, then you are forecasting future value, otherwise ur model is predicting present but unknown values. Regression techinique vary from Linear regression to SVR and random forest regression. 
 
+Simple Linear Regression
+Multiple Linear Regression
+Polynomial Regression
+Support Vector for Regression
+Decision Tree Classification
+Random Forest Classification
