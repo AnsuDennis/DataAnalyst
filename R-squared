@@ -1,0 +1,13 @@
+SS(res) = SUM (yi - yi^)^2
+SS(tol) = SUM (yi - yave)^2
+
+R ^ 2 = 1 - (SS(res)/SS(tol))
+
+R squared is telling how good the line is compared to ave line. normally 0 to 1. goodness of fit. Closer to 1 better it is. If its -ve then we will have to redo model 
+
+adjusted R square = 1 - (1-R ^ 2 ) * (n-1)/(n-p-1)
+n = sample size
+p=number of regressors 
+
+
+
