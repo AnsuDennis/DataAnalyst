@@ -1,0 +1,6 @@
+how to select the best model 
+
+Try all the models
+Select the model with the best performance result by adjusted R square  
+
+Generic template with performance of classification and regression model is needed as there are many models 
