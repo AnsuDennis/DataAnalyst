@@ -1,1 +1,21 @@
+y = b0 + (b1 * x) 
+
+||
+
+p = 1 / (1 + e ^ -y) => Sigmoid function 
+
+||
+
+ln(p / (1-p) ) = b0 + b1 * x 
+
+best fitting line which fits the observations in data set (looks like plateau ) 
+
+p hat = probability 
+
+y hat (predicted value for dependent variable) 
+
+if probability is belwo .5 then y hat = 0 else y hat is 1 
+
+
+
 
